@@ -33,7 +33,7 @@
 .navigation {
     display: grid;
     grid-template-columns: 350px auto 180px;
-
+    position: sticky;
 }
 
 .nav-title {
