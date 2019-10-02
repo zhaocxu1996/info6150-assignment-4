@@ -110,28 +110,13 @@
     color: $nav-title;
 }
 
-.service-image1 {
-    background-image: url(./images/service1.jpg);
-    width: 250px;
-    height: 150px;
-}
-
-.service-image2 {
-    background-image: url(./images/service2.jpg);
-    width: 250px;
-    height: 150px;
-}
-
-.service-image3 {
-    background-image: url(./images/service3.jpg);
-    width: 250px;
-    height: 150px;
-}
-
-.service-image4 {
-    background-image: url(./images/service4.jpg);
-    width: 250px;
-    height: 150px;
+// loop
+@for $i from 1 through 4 {
+    .service-image#{$i} {
+        background-image: url("./images/service"+$i+".jpg");
+        width: 250px;
+        height: 150px;
+    }
 }
 
 .service-subcontent {
@@ -513,25 +498,22 @@
 .our-projects {
     margin-top: 100px;
     height: 440px;
-}
-
-.project-images {
-    margin-top: 100px;
-    display: grid;
-    grid-template-columns: auto auto auto auto;
-}
-
-.project-image {
-    background-image: url("./images/project1.jpg");
-    width: 480px;
-    height: 300px;
-}
-
-.project-image2 {
-    background-image: url("./images/project2.jpg");
-    width: 480px;
-    height: 300px;
-    text-align: right;
+    .project-images {
+        margin-top: 100px;
+        display: grid;
+        grid-template-columns: auto auto auto auto;
+        .project-image {
+            background-image: url("./images/project1.jpg");
+            width: 480px;
+            height: 300px;
+        }
+        .project-image2 {
+            background-image: url("./images/project2.jpg");
+            width: 480px;
+            height: 300px;
+            text-align: right;
+        }
+    }
 }
 
 .image-button {
@@ -597,6 +579,11 @@
     background-color: rgb(240,240,240);
 }
 
+::placeholder {
+    font-style: italic;
+    font-size: 20px;
+}
+
 .send-message {
     margin-top: 40px;
     text-align: center;
@@ -627,8 +614,22 @@
     width: 340px;
 }
 
-.end-company-title {
+// mixin
+@mixin title-text {
+    font: {
+        weight: bold;
+        size: 30px;
+    }
     color: $nav-title;
+}
+
+.end-company-title {
+    @include title-text;
+}
+
+// inheritance
+.end-subcontent {
+    @extend .blog-subcontent;
 }
 
 .copyright {

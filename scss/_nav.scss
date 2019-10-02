@@ -1,3 +1,4 @@
+// Nested selectors
 .top-bar {
     padding-left: 20%;
     padding-right: 20%;
@@ -12,15 +13,15 @@
     font-weight: 500;
     color: rgb(150, 150, 150);
     border-bottom: 1px solid rgb(200, 200, 200);
-}
-// 1180px long
-.top-content {
-    grid-column: 1;
-}
-
-.top-contact {
-    grid-column: 3;
-    text-align: right;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    .top-content {
+        grid-column: 1;
+    }
+    .top-contact {
+        grid-column: 3;
+        text-align: right;
+    }
 }
 
 .nav {
@@ -30,49 +31,39 @@
     position: fixed;
     z-index: 10;
     background-color: white;
-}
-
-.navigation {
-    display: grid;
-    grid-template-columns: 350px auto 180px;
-    position: sticky;
-}
-
-.nav-title {
-    color: $nav-title;
-    grid-column: 1;
-    font-weight: 700;
-    font-size: 35px;
-}
-
-.nav-bars{
-    grid-column: 2;
-    margin: auto;
-}
-
-.nav-bar {
-    float: left;
-    margin-left: 30px;
-    font-size: 14px;
-    font-weight: 600;
-    color: rgb(150, 150, 150);;
-}
-
-.nav-button {
-    grid-column: 3;
-    height: 60px;
-    margin: auto;
-    border-radius: 30px;
-    border: 0;
-    width: 170px;
-    font-size: 14px;
-    color: white;
-    background-color: $nav-title;
-}
-
-.top-bar {
-    margin-top: 20px;
-    margin-bottom: 20px;
+    .navigation {
+        display: grid;
+        grid-template-columns: 350px auto 180px;
+        position: sticky;
+        .nav-title {
+            color: $nav-title;
+            grid-column: 1;
+            font-weight: 700;
+            font-size: 35px;
+        }
+        .nav-bars{
+            grid-column: 2;
+            margin: auto;
+            .nav-bar {
+                float: left;
+                margin-left: 30px;
+                font-size: 14px;
+                font-weight: 600;
+                color: rgb(150, 150, 150);;
+            }
+        }
+        .nav-button {
+            grid-column: 3;
+            height: 60px;
+            margin: auto;
+            border-radius: 30px;
+            border: 0;
+            width: 170px;
+            font-size: 14px;
+            color: white;
+            background-color: $nav-title;
+        }
+    }
 }
 
 a:hover{
