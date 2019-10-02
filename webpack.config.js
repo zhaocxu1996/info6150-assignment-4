@@ -47,7 +47,7 @@ module.exports = {
             use: [{
                 loader: 'file-loader',
                 options: {
-                    name: 'images/background.jpg',
+                    name: 'images/test.jpg',
                     publicPath: '/'
                 }
             }]
