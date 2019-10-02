@@ -4,3 +4,8 @@ body {
     grid-template-rows: auto auto 1080px;
     
 }
+
+::placeholder {
+    font-style: italic;
+    font-size: 20px;
+}

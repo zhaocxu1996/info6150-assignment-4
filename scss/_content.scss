@@ -511,7 +511,8 @@
 }
 
 .our-projects {
-    height: 550px;
+    margin-top: 100px;
+    height: 440px;
 }
 
 .project-images {
@@ -521,9 +522,27 @@
 }
 
 .project-image {
-    // background-image: url("../scss/images/test.jpg");
+    background-image: url("./images/project1.jpg");
     width: 480px;
     height: 300px;
+}
+
+.project-image2 {
+    background-image: url("./images/project2.jpg");
+    width: 480px;
+    height: 300px;
+    text-align: right;
+}
+
+.image-button {
+    margin-top: 125px; 
+    color: white;
+    background-color: $nav-title;
+    height: 50px;
+    width: 50px;
+    border-radius: 25px;
+    border: 0;
+    font-size: 40px;
 }
 
 .get-quote {
@@ -543,4 +562,110 @@
     margin-top: 100px;
     height: 750px;
     background-color: white;
+}
+
+.quote-title {
+    margin-top: 50px;
+    text-align: center;
+    color: $nav-title;
+}
+
+.input-area {
+    margin-top: 30px;
+    margin-left: 50px;
+    margin-right: 50px;
+    width: 475px;
+    height: 70px;
+    border: 0;
+    background-color: rgb(240,240,240);
+}
+
+.input-text {
+    margin:25px;
+    border: 0;
+    background-color: rgb(240,240,240);
+    font-size: 20px;
+}
+
+.input-address {
+    margin-top: 30px;
+    margin-left: 50px;
+    margin-right: 50px;
+    width: 475px;
+    height: 150px;
+    border: 0;
+    background-color: rgb(240,240,240);
+}
+
+.send-message {
+    margin-top: 40px;
+    text-align: center;
+}
+
+.send-button {
+    border: 0;
+    font-size: 14px;
+    color: white;
+    height: 60px;
+    width: 475px;
+    background-color: $nav-title;
+    font-size: 20px;
+    font-style: italic;
+    font-weight: bold;
+}
+
+.end {
+    padding-left: 20%;
+    padding-right: 20%;
+    display: grid;
+    grid-template-columns: 420px 250px auto auto;
+    height: 380px;
+    margin-top: 100px;
+}
+
+.end-company {
+    width: 340px;
+}
+
+.end-company-title {
+    color: $nav-title;
+}
+
+.copyright {
+    margin-top: 20px;
+    color: grey;
+    font-size: 13px;
+}
+
+.bold {
+    color: black;
+}
+
+.view-title {
+    margin-top: 35px;
+    color: gray;
+    margin-bottom: 30px;
+    font-weight: bold;
+}
+
+.view-content {
+    text-align: left;
+    font-size: 13px;
+    font-weight: 500;
+    color: grey;
+    margin-top: 10px;
+}
+
+.contact-question-mark {
+    margin-top: 10px;
+    width: 120px;
+    height: 30px;
+    background-image: url("./images/contact-questionmark.png");
+}
+
+.member-questionmark{
+    margin: auto;
+    background-image: url("./images/member-questionmark.png");
+    width: 100px;
+    height: 25px;
 }
