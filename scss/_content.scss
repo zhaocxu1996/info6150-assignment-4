@@ -2,6 +2,7 @@
     // background: url("images/test.jpg");
     margin-top: 120px;
     height: 800px;
+    z-index: 10;
 }
 
 .p1 {
@@ -37,4 +38,48 @@
 
 .p1, .p2, .hero-button {
     position: relative;
+}
+
+.why {
+    height: 600px;
+}
+
+.why-title{
+    margin-top: 100px;
+    color: $nav-title;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.why-contents {
+    padding-left: 20%;
+    padding-right: 20%;
+}
+
+.why-content {
+    float: left;
+    text-align: center;
+    width: 380px;
+    margin-top: 80px;
+    height: 320px;
+}
+
+.question-mark {
+    margin-top: 20px;
+    height: 150px;
+}
+
+.why-subtitle {
+    font-weight: 600;
+    font-size: 20px;
+    margin: 20px;
+    color: $nav-title;
+}
+
+.why-subcontent {
+    margin: 20px;
+    color: grey;
+    font-size: 13px;
+    line-height: 25px;
 }
