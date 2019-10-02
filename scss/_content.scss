@@ -313,6 +313,12 @@
 
 .price-table {
     margin:20px;
+    height: 450px;
+    width: 240px;
+}
+
+section :hover {
+    border: 3px solid $nav-title;
 }
 
 .question-mark3 {
